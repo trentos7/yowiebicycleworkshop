@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Bookmania';
+	src:
+		url('./b65b5f54-6ce0-4ecc-b056-7c00c1a6b386.woff2') format('woff2'),
+		url('./b42a2434-0556-4edc-826f-429b24348375.woff') format('woff'),
+		url('./88aa0419-370a-48c1-bf57-01b5cdb0efca.ttf') format('truetype');
+	font-weight: 600;
+	font-display: fallback;
+	font-style: normal;
+}
