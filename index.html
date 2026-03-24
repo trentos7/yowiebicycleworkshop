@@ -9,54 +9,66 @@
     <link rel="shortcut icon" type="image/x-icon" href="square.ico">
 
     <style>
-        /* This ensures the content is visible even without the JS loader */
-        html, body { visibility: visible !important; opacity: 1 !important; display: block !important; }
-        .sqs-announcement-bar-dropzone { display: none; }
-        #site-canvas { min-height: 100vh; }
+        /* Square's CSS often defaults to 'hidden' until JS runs. This forces it to show. */
+        html, body, #site-canvas { 
+            visibility: visible !important; 
+            opacity: 1 !important; 
+            display: block !important; 
+        }
+        /* Custom tweaks to replace missing JS functionality */
+        #logoWrapper { padding: 40px 0; text-align: center; }
+        .main-content { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+        .hero-title { font-size: 3rem; color: #ddb25e; line-height: 1.2; }
+        .hero-sub { font-size: 1.4rem; color: #666; margin: 20px 0 40px; }
+        .booking-btn { 
+            background-color: #ddb25e; 
+            color: white; 
+            padding: 18px 36px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 2px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body class="site-alignment-center header-navigation-split-nav-right-logo-left design-layout-stack">
 
     <div id="site-canvas">
-        <header id="header" class="site-header" role="banner">
+        <header id="header" class="site-header">
             <div class="header-inner">
-                <div id="logoWrapper" class="wrapper" data-content-field="site-title">
-                    <h1 id="logoImage" class="site-title">
-                        <a href="/">Yowie Bicycle Workshop</a>
+                <div id="logoWrapper">
+                    <h1 class="site-title">
+                        <a href="/" style="text-decoration: none; color: inherit;">YOWIE BICYCLE WORKSHOP</a>
                     </h1>
                 </div>
             </div>
         </header>
 
         <main id="page" role="main">
-            <div id="content" class="main-content" data-content-field="main-content">
+            <div class="main-content">
                 <section class="sqs-layout">
-                    <div class="row sqs-row">
-                        <div class="col sqs-col-12">
-                            <div class="sqs-block html-block">
-                                <div class="sqs-block-content">
-                                    <h1 style="text-align:center; white-space:pre-wrap;">Expert Bike repairs on the Northern Beaches</h1>
-                                    <p style="text-align:center; white-space:pre-wrap;">Based in North Narrabeen, Yowie Bicycle Workshop provides premium mechanical support for all types of bikes.</p>
-                                </div>
-                            </div>
+                    <div class="sqs-block html-block">
+                        <div class="sqs-block-content">
+                            <h2 class="hero-title">Expert Bike Repairs in North Narrabeen</h2>
+                            <p class="hero-sub">
+                                Premium mechanical support for all types of bikes on the Northern Beaches.
+                            </p>
                         </div>
                     </div>
-                </section>
-                
-                <section class="sqs-layout">
+
                     <div class="sqs-block button-block">
-                        <div class="sqs-block-content" style="text-align:center;">
-                            <a href="mailto:hello@yowiebicycleworkshop.com.au" class="sqs-block-button-element--medium sqs-block-button-element">Book a Service</a>
+                        <div class="sqs-block-content">
+                            <a href="mailto:hello@yowiebicycleworkshop.com.au" class="booking-btn">
+                                BOOK A SERVICE
+                            </a>
                         </div>
                     </div>
                 </section>
             </div>
         </main>
 
-        <footer id="footer" class="site-footer" role="contentinfo">
-            <div class="footer-inner">
-                <p style="text-align:center;">&copy; 2026 Yowie Bicycle Workshop - Northern Beaches, Sydney</p>
-            </div>
+        <footer id="footer" style="padding: 100px 20px 40px; text-align: center; color: #999;">
+            <p>&copy; 2026 Yowie Bicycle Workshop - Northern Beaches, Sydney</p>
         </footer>
     </div>
 
