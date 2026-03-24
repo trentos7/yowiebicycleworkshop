@@ -2,82 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Bicycle service repairs Northern Beaches | Yowie Bicycle Workshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yowie Bicycle Workshop | Northern Beaches Bike Repairs</title>
     
-    <link rel="shortcut icon" type="image/x-icon" href="square.ico">
     <link rel="stylesheet" href="./home_assets/site.3e67d0820f76a805afd5.css">
+    <link rel="shortcut icon" type="image/x-icon" href="square.ico">
 
     <style>
-        .loading-view { width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; z-index: 100; background: #fff; }
-        .loading-container { width: 72px; height: 54px; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 12px; }
-        .dot-container { width: 100%; height: 100%; background: #ddb25e; border-radius: 50%; animation: pulse 1.5s infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+        /* Custom tweaks to ensure the static version looks right without the JS engine */
+        body { font-family: sans-serif; margin: 0; padding: 0; color: #333; }
+        .header { padding: 20px; text-align: center; border-bottom: 1px solid #eee; }
+        .hero { padding: 60px 20px; text-align: center; background: #f9f9f9; }
+        .hero h1 { font-size: 2.5em; color: #ddb25e; }
+        .content-section { max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+        .cta-button { display: inline-block; padding: 12px 24px; background: #ddb25e; color: white; text-decoration: none; border-radius: 4px; margin-top: 20px; }
+        footer { text-align: center; padding: 40px; font-size: 0.9em; color: #888; }
     </style>
-
-    <script>
-        window.__DYNAMIC_BOOTSTRAP__ = { 
-            featureFlags: {
-                "ecom.website.billing-features": true 
-            } 
-        };
-
-        window.__BOOTSTRAP_STATE__ = {
-            "siteData": {
-                "site": {
-                    "id": "40a368f0-4c38-11ec-9a19-b7cf05534871",
-                    "properties": {
-                        "language": "en",
-                        "site_versions": { "published": { "v8": "6ed8ecd0-6428-11ee-af1a-1d3e3f921439" } }
-                    }
-                },
-                "pages": {
-                    "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84": {
-                        "id": "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84",
-                        "name": "Home",
-                        "page_type": "home",
-                        "layout_id": "standard-layout"
-                    }
-                },
-                "pagesMeta": [
-                    { "id": "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84", "name": "Home", "route": "" }
-                ],
-                "snapshot": {
-                    "properties": {
-                        "homePage": "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84",
-                        "routeMap": { "": "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84" }
-                    }
-                },
-                "layouts": {
-                    "standard-layout": { "id": "standard-layout", "sections": [] }
-                },
-                // THE FIX: Provide the billing data the script is looking for
-                "billing": {
-                    "billingFeatures": []
-                },
-                "subscription": {
-                    "plan": "free"
-                }
-            },
-            "version": 8
-        };
-    </script>
 </head>
-<body class="w-site-design-v8">
-    <div id="app">
-        <div class="loading-view">
-            <div class="loading-container">
-                <div class="dot-container"></div>
-                <div class="dot-container"></div>
-                <div class="dot-container"></div>
-            </div>
-        </div>
+<body>
+
+    <header class="header">
+        <nav>
+            <strong>YOWIE BICYCLE WORKSHOP</strong>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Expert Bike Repairs in North Narrabeen</h1>
+        <p>Premium service and mechanical repairs for all types of bicycles on the Northern Beaches.</p>
+        <a href="mailto:your-email@example.com" class="cta-button">Book a Service</a>
+    </section>
+
+    <div class="content-section">
+        <h2>Professional Workshop Services</h2>
+        <p>From minor tune-ups to full custom builds and e-bike diagnostics, we provide high-quality mechanical support to keep you rolling.</p>
+        
+        <ul>
+            <li>Full Mechanical Servicing</li>
+            <li>Drivetrain Cleans & Upgrades</li>
+            <li>Brake Bleeding & Suspension Setup</li>
+            <li>E-Bike Component Repairs</li>
+        </ul>
     </div>
 
-    <script defer src="./home_assets/system.c3b89b0b94f4ef0671b1.js"></script>
-    <script defer src="./home_assets/runtime.c925fa66cd27f2b953bc.js"></script>
-    <script defer src="./home_assets/vue-modules.4a41b3ba298bf4563d97.js"></script>
-    <script defer src="./home_assets/en.cbb1d314b1b863a2ffa3.js"></script>
-    <script defer src="./home_assets/site.34faa8f8ea72b04843a2.js"></script>
+    <footer>
+        <p>&copy; 2026 Yowie Bicycle Workshop. Located in the Northern Beaches, Sydney.</p>
+    </footer>
+
 </body>
 </html>
