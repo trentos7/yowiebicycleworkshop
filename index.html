@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yowie Bicycle Workshop | Northern Beaches Bike Repairs</title>
+    <title>Yowie Bicycle Workshop | North Narrabeen Bike Repairs</title>
     
     <link rel="stylesheet" href="./home_assets/site.3e67d0820f76a805afd5.css">
 
     <style>
-        /* 1. FORCE VISIBILITY (Square CSS hides the body by default) */
-        html, body { 
-            visibility: visible !important; 
-            opacity: 1 !important; 
-            margin: 0; 
-            padding: 0; 
-            background: #1a1a1a; /* Dark background matches a pro workshop feel */
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-
-        /* 2. THE HERO SECTION (The "Big Look") */
-        .hero-banner {
-            position: relative;
+        /* Modern, Static Reset */
+        body, html { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #fff; visibility: visible !important; opacity: 1 !important; }
+        
+        /* The Professional Hero Section */
+        .hero {
             height: 85vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #222;
-            /* REPLIT/NETLIFY PATH: Change 'background.jpg' to your actual image name in home_files */
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./home_files/background.jpg');
+            background: #111; /* Fallback color */
+            /* Replace 'hero-image.jpg' with your best workshop photo from home_files */
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./home_files/hero-image.jpg');
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -35,60 +27,57 @@
         }
 
         .hero-content h1 {
-            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
             color: #ddb25e; /* Your Yowie Gold */
-            margin: 0;
             text-transform: uppercase;
-            letter-spacing: 4px;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
         }
 
         .hero-content p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 20px auto;
-            line-height: 1.6;
-            color: #eee;
+            font-size: 1.25rem;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #ccc;
         }
 
-        /* 3. THE BUTTON (Matching your original style) */
-        .btn-booking {
-            display: inline-block;
+        /* The 'Call to Action' Button */
+        .cta-btn {
             background: #ddb25e;
-            color: white !important;
-            padding: 18px 40px;
+            color: #fff !important;
+            padding: 20px 45px;
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
             border-radius: 2px;
-            margin-top: 20px;
-            transition: transform 0.2s;
+            display: inline-block;
+            transition: 0.3s ease;
         }
-        .btn-booking:hover { transform: scale(1.05); background: #c9a154; }
+        .cta-btn:hover { background: #c9a154; transform: translateY(-2px); }
 
-        /* 4. HEADER/FOOTER */
-        .nav-header { padding: 30px; text-align: center; background: white; }
-        .nav-header a { color: #333; text-decoration: none; font-weight: bold; letter-spacing: 2px; }
-        footer { padding: 80px 20px; text-align: center; color: #666; font-size: 0.9rem; background: white; }
+        header { padding: 25px; text-align: center; border-bottom: 1px solid #eee; background: white; }
+        header a { color: #222; text-decoration: none; font-weight: bold; letter-spacing: 3px; }
+        footer { padding: 60px 20px; text-align: center; color: #999; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
-    <header class="nav-header">
+    <header>
         <a href="/">YOWIE BICYCLE WORKSHOP</a>
     </header>
 
-    <section class="hero-banner">
+    <section class="hero">
         <div class="hero-content">
             <h1>Expert Bike Repairs</h1>
-            <h3>North Narrabeen</h3>
+            <h3 style="letter-spacing: 4px; font-weight: 300; margin-bottom: 20px;">NORTH NARRABEEN</h3>
             <p>Premium mechanical support for all types of bikes on the Northern Beaches.</p>
-            <a href="mailto:hello@yowiebicycleworkshop.com.au" class="btn-booking">Book a Service</a>
+            <a href="mailto:hello@yowiebicycleworkshop.com.au" class="cta-btn">Book a Service</a>
         </div>
     </section>
 
     <footer>
-        &copy; 2026 Yowie Bicycle Workshop - North Narrabeen, Sydney
+        &copy; 2026 Yowie Bicycle Workshop - Northern Beaches, Sydney
     </footer>
 
 </body>
