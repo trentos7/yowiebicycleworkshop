@@ -17,14 +17,23 @@
     </style>
 
     <script>
-        // This is the missing piece that caused the error
+        // Full configuration data to stop the JavaScript errors
         window.__DYNAMIC_BOOTSTRAP__ = { featureFlags: {} };
         window.__BOOTSTRAP_STATE__ = {
             "siteData": {
                 "site": {
                     "id": "40a368f0-4c38-11ec-9a19-b7cf05534871",
-                    "properties": { "language": "en", "site_versions": { "published": { "v8": "6ed8ecd0-6428-11ee-af1a-1d3e3f921439" } } }
-                }
+                    "properties": {
+                        "language": "en",
+                        "site_versions": { "published": { "v8": "6ed8ecd0-6428-11ee-af1a-1d3e3f921439" } },
+                        "domain": { "custom_domain": "www.yowiebicycleworkshop.com.au" }
+                    }
+                },
+                "pagesMeta": [
+                    { "id": "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84", "name": "Home", "route": "" },
+                    { "id": "59c3b860-b9fe-11f0-a9b4-f3fee5620d99", "name": "About", "route": "about" },
+                    { "id": "59c44810-b9fe-11f0-9d88-931384fe8551", "name": "Services", "route": "services" }
+                ]
             },
             "version": 8
         };
