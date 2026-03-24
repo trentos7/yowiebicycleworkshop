@@ -6,16 +6,29 @@
     <title>Bicycle service repairs Northern Beaches | Yowie Bicycle Workshop</title>
     
     <link rel="shortcut icon" type="image/x-icon" href="square.ico">
-    
     <link rel="preload" href="./home_assets/site.3e67d0820f76a805afd5.css" as="style">
     <link rel="stylesheet" href="./home_assets/site.3e67d0820f76a805afd5.css">
 
     <style>
-        .loading-view { width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; z-index: 100; }
-        .loading-container { width: 62px; height: 54px; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 12px; }
-        .dot-container { width: 100%; height: 100%; background: linear-gradient(#ddb25e20, #ddb25e); mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDIgMiI+Cgk8Y2lyY2xlIHI9IjEiLz4KPC9zdmc+Cg=='); mask-repeat: no-repeat; mask-size: 100% auto; mask-position: bottom; animation: loading-view-movement 3750ms infinite cubic-bezier(0.8, 0, 0.8, 1); }
-        @keyframes loading-view-movement { 0%, 27%, 54% { mask-position: bottom; } 14%, 41%, 68% { mask-position: top; } 81%, 100% { mask-position: bottom; } }
+        .loading-view { width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; z-index: 100; background: #fff; }
+        .loading-container { width: 72px; height: 54px; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 12px; }
+        .dot-container { width: 100%; height: 100%; background: #ddb25e; border-radius: 50%; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
     </style>
+
+    <script>
+        // This is the missing piece that caused the error
+        window.__DYNAMIC_BOOTSTRAP__ = { featureFlags: {} };
+        window.__BOOTSTRAP_STATE__ = {
+            "siteData": {
+                "site": {
+                    "id": "40a368f0-4c38-11ec-9a19-b7cf05534871",
+                    "properties": { "language": "en", "site_versions": { "published": { "v8": "6ed8ecd0-6428-11ee-af1a-1d3e3f921439" } } }
+                }
+            },
+            "version": 8
+        };
+    </script>
 </head>
 <body class="w-site-design-v8">
     <div id="app">
@@ -28,13 +41,10 @@
         </div>
     </div>
 
-    <script id="snowday-script" async src="./home_assets/snowday262.js"></script>
     <script defer src="./home_assets/system.c3b89b0b94f4ef0671b1.js"></script>
-    <script type="systemjs-importmap" src="./home_assets/imports.en.831b2ee9e39fbd87.js"></script>
-    
-    <script defer type="text/javascript" src="./home_assets/runtime.c925fa66cd27f2b953bc.js"></script>
-    <script defer type="text/javascript" src="./home_assets/vue-modules.4a41b3ba298bf4563d97.js"></script>
-    <script defer type="text/javascript" src="./home_assets/en.cbb1d314b1b863a2ffa3.js"></script>
-    <script defer type="text/javascript" src="./home_assets/site.34faa8f8ea72b04843a2.js"></script>
+    <script defer src="./home_assets/runtime.c925fa66cd27f2b953bc.js"></script>
+    <script defer src="./home_assets/vue-modules.4a41b3ba298bf4563d97.js"></script>
+    <script defer src="./home_assets/en.cbb1d314b1b863a2ffa3.js"></script>
+    <script defer src="./home_assets/site.34faa8f8ea72b04843a2.js"></script>
 </body>
 </html>
