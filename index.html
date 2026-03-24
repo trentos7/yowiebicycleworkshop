@@ -6,7 +6,6 @@
     <title>Bicycle service repairs Northern Beaches | Yowie Bicycle Workshop</title>
     
     <link rel="shortcut icon" type="image/x-icon" href="square.ico">
-    <link rel="preload" href="./home_assets/site.3e67d0820f76a805afd5.css" as="style">
     <link rel="stylesheet" href="./home_assets/site.3e67d0820f76a805afd5.css">
 
     <style>
@@ -18,7 +17,10 @@
 
     <script>
         window.__DYNAMIC_BOOTSTRAP__ = { 
-            featureFlags: {"ecom.website.published-site.datadog-rum":true} 
+            featureFlags: {
+                "ecom.website.published-site.datadog-rum": false,
+                "ecom.website.billing-features": true 
+            } 
         };
 
         window.__BOOTSTRAP_STATE__ = {
@@ -34,7 +36,8 @@
                     "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84": {
                         "id": "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84",
                         "name": "Home",
-                        "page_type": "home"
+                        "page_type": "home",
+                        "layout_id": "standard-layout"
                     }
                 },
                 "pagesMeta": [
@@ -45,6 +48,17 @@
                         "homePage": "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84",
                         "routeMap": { "": "59c3ed20-b9fe-11f0-b0c0-8d5c9cc85f84" }
                     }
+                },
+                "layouts": {
+                    "standard-layout": { "id": "standard-layout", "sections": [] }
+                },
+                // THIS IS THE NEW FIX:
+                "billing": {
+                    "features": [],
+                    "billingFeatures": [] 
+                },
+                "subscription": {
+                    "plan": "free"
                 }
             },
             "version": 8
