@@ -6,71 +6,90 @@
     <title>Yowie Bicycle Workshop | Northern Beaches Bike Repairs</title>
     
     <link rel="stylesheet" href="./home_assets/site.3e67d0820f76a805afd5.css">
-    <link rel="shortcut icon" type="image/x-icon" href="square.ico">
 
     <style>
-        /* Square's CSS often defaults to 'hidden' until JS runs. This forces it to show. */
-        html, body, #site-canvas { 
+        /* 1. FORCE VISIBILITY (Square CSS hides the body by default) */
+        html, body { 
             visibility: visible !important; 
             opacity: 1 !important; 
-            display: block !important; 
+            margin: 0; 
+            padding: 0; 
+            background: #1a1a1a; /* Dark background matches a pro workshop feel */
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
-        /* Custom tweaks to replace missing JS functionality */
-        #logoWrapper { padding: 40px 0; text-align: center; }
-        .main-content { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
-        .hero-title { font-size: 3rem; color: #ddb25e; line-height: 1.2; }
-        .hero-sub { font-size: 1.4rem; color: #666; margin: 20px 0 40px; }
-        .booking-btn { 
-            background-color: #ddb25e; 
-            color: white; 
-            padding: 18px 36px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-radius: 2px;
+
+        /* 2. THE HERO SECTION (The "Big Look") */
+        .hero-banner {
+            position: relative;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #222;
+            /* REPLIT/NETLIFY PATH: Change 'background.jpg' to your actual image name in home_files */
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./home_files/background.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            color: #ddb25e; /* Your Yowie Gold */
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+            color: #eee;
+        }
+
+        /* 3. THE BUTTON (Matching your original style) */
+        .btn-booking {
             display: inline-block;
+            background: #ddb25e;
+            color: white !important;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 2px;
+            margin-top: 20px;
+            transition: transform 0.2s;
         }
+        .btn-booking:hover { transform: scale(1.05); background: #c9a154; }
+
+        /* 4. HEADER/FOOTER */
+        .nav-header { padding: 30px; text-align: center; background: white; }
+        .nav-header a { color: #333; text-decoration: none; font-weight: bold; letter-spacing: 2px; }
+        footer { padding: 80px 20px; text-align: center; color: #666; font-size: 0.9rem; background: white; }
     </style>
 </head>
-<body class="site-alignment-center header-navigation-split-nav-right-logo-left design-layout-stack">
+<body>
 
-    <div id="site-canvas">
-        <header id="header" class="site-header">
-            <div class="header-inner">
-                <div id="logoWrapper">
-                    <h1 class="site-title">
-                        <a href="/" style="text-decoration: none; color: inherit;">YOWIE BICYCLE WORKSHOP</a>
-                    </h1>
-                </div>
-            </div>
-        </header>
+    <header class="nav-header">
+        <a href="/">YOWIE BICYCLE WORKSHOP</a>
+    </header>
 
-        <main id="page" role="main">
-            <div class="main-content">
-                <section class="sqs-layout">
-                    <div class="sqs-block html-block">
-                        <div class="sqs-block-content">
-                            <h2 class="hero-title">Expert Bike Repairs in North Narrabeen</h2>
-                            <p class="hero-sub">
-                                Premium mechanical support for all types of bikes on the Northern Beaches.
-                            </p>
-                        </div>
-                    </div>
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>Expert Bike Repairs</h1>
+            <h3>North Narrabeen</h3>
+            <p>Premium mechanical support for all types of bikes on the Northern Beaches.</p>
+            <a href="mailto:hello@yowiebicycleworkshop.com.au" class="btn-booking">Book a Service</a>
+        </div>
+    </section>
 
-                    <div class="sqs-block button-block">
-                        <div class="sqs-block-content">
-                            <a href="mailto:hello@yowiebicycleworkshop.com.au" class="booking-btn">
-                                BOOK A SERVICE
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-
-        <footer id="footer" style="padding: 100px 20px 40px; text-align: center; color: #999;">
-            <p>&copy; 2026 Yowie Bicycle Workshop - Northern Beaches, Sydney</p>
-        </footer>
-    </div>
+    <footer>
+        &copy; 2026 Yowie Bicycle Workshop - North Narrabeen, Sydney
+    </footer>
 
 </body>
 </html>
