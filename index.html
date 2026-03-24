@@ -9,45 +9,56 @@
     <link rel="shortcut icon" type="image/x-icon" href="square.ico">
 
     <style>
-        /* Custom tweaks to ensure the static version looks right without the JS engine */
-        body { font-family: sans-serif; margin: 0; padding: 0; color: #333; }
-        .header { padding: 20px; text-align: center; border-bottom: 1px solid #eee; }
-        .hero { padding: 60px 20px; text-align: center; background: #f9f9f9; }
-        .hero h1 { font-size: 2.5em; color: #ddb25e; }
-        .content-section { max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-        .cta-button { display: inline-block; padding: 12px 24px; background: #ddb25e; color: white; text-decoration: none; border-radius: 4px; margin-top: 20px; }
-        footer { text-align: center; padding: 40px; font-size: 0.9em; color: #888; }
+        /* This ensures the content is visible even without the JS loader */
+        html, body { visibility: visible !important; opacity: 1 !important; display: block !important; }
+        .sqs-announcement-bar-dropzone { display: none; }
+        #site-canvas { min-height: 100vh; }
     </style>
 </head>
-<body>
+<body class="site-alignment-center header-navigation-split-nav-right-logo-left design-layout-stack">
 
-    <header class="header">
-        <nav>
-            <strong>YOWIE BICYCLE WORKSHOP</strong>
-        </nav>
-    </header>
+    <div id="site-canvas">
+        <header id="header" class="site-header" role="banner">
+            <div class="header-inner">
+                <div id="logoWrapper" class="wrapper" data-content-field="site-title">
+                    <h1 id="logoImage" class="site-title">
+                        <a href="/">Yowie Bicycle Workshop</a>
+                    </h1>
+                </div>
+            </div>
+        </header>
 
-    <section class="hero">
-        <h1>Expert Bike Repairs in North Narrabeen</h1>
-        <p>Premium service and mechanical repairs for all types of bicycles on the Northern Beaches.</p>
-        <a href="mailto:your-email@example.com" class="cta-button">Book a Service</a>
-    </section>
+        <main id="page" role="main">
+            <div id="content" class="main-content" data-content-field="main-content">
+                <section class="sqs-layout">
+                    <div class="row sqs-row">
+                        <div class="col sqs-col-12">
+                            <div class="sqs-block html-block">
+                                <div class="sqs-block-content">
+                                    <h1 style="text-align:center; white-space:pre-wrap;">Expert Bike repairs on the Northern Beaches</h1>
+                                    <p style="text-align:center; white-space:pre-wrap;">Based in North Narrabeen, Yowie Bicycle Workshop provides premium mechanical support for all types of bikes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="sqs-layout">
+                    <div class="sqs-block button-block">
+                        <div class="sqs-block-content" style="text-align:center;">
+                            <a href="mailto:hello@yowiebicycleworkshop.com.au" class="sqs-block-button-element--medium sqs-block-button-element">Book a Service</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
 
-    <div class="content-section">
-        <h2>Professional Workshop Services</h2>
-        <p>From minor tune-ups to full custom builds and e-bike diagnostics, we provide high-quality mechanical support to keep you rolling.</p>
-        
-        <ul>
-            <li>Full Mechanical Servicing</li>
-            <li>Drivetrain Cleans & Upgrades</li>
-            <li>Brake Bleeding & Suspension Setup</li>
-            <li>E-Bike Component Repairs</li>
-        </ul>
+        <footer id="footer" class="site-footer" role="contentinfo">
+            <div class="footer-inner">
+                <p style="text-align:center;">&copy; 2026 Yowie Bicycle Workshop - Northern Beaches, Sydney</p>
+            </div>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2026 Yowie Bicycle Workshop. Located in the Northern Beaches, Sydney.</p>
-    </footer>
 
 </body>
 </html>
