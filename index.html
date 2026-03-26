@@ -1,84 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yowie Bicycle Workshop | North Narrabeen Bike Repairs</title>
-    
-    <link rel="stylesheet" href="./home_assets/site.3e67d0820f76a805afd5.css">
-
-    <style>
-        /* Modern, Static Reset */
-        body, html { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #fff; visibility: visible !important; opacity: 1 !important; }
-        
-        /* The Professional Hero Section */
-        .hero {
-            height: 85vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #111; /* Fallback color */
-            /* Replace 'hero-image.jpg' with your best workshop photo from home_files */
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./home_files/hero-image.jpg');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            color: white;
-        }
-
-        .hero-content h1 {
-            font-size: clamp(2.5rem, 7vw, 4.5rem);
-            color: #ddb25e; /* Your Yowie Gold */
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin-bottom: 10px;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            max-width: 650px;
-            margin: 0 auto 30px;
-            color: #ccc;
-        }
-
-        /* The 'Call to Action' Button */
-        .cta-btn {
-            background: #ddb25e;
-            color: #fff !important;
-            padding: 20px 45px;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-radius: 2px;
-            display: inline-block;
-            transition: 0.3s ease;
-        }
-        .cta-btn:hover { background: #c9a154; transform: translateY(-2px); }
-
-        header { padding: 25px; text-align: center; border-bottom: 1px solid #eee; background: white; }
-        header a { color: #222; text-decoration: none; font-weight: bold; letter-spacing: 3px; }
-        footer { padding: 60px 20px; text-align: center; color: #999; font-size: 0.8rem; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yowie Bicycle Workshop | Friendly Local Bike Mechanics Service</title>
+  <meta name="description" content="Friendly local bike mechanics service in Sydney's Northern Beaches. Repairs, servicing, builds, and honest advice from Yowie Bicycle Workshop." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-main.png" alt="Yowie Bicycle Workshop logo" />
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <a href="/">YOWIE BICYCLE WORKSHOP</a>
-    </header>
-
+  <main>
     <section class="hero">
-        <div class="hero-content">
-            <h1>Expert Bike Repairs</h1>
-            <h3 style="letter-spacing: 4px; font-weight: 300; margin-bottom: 20px;">NORTH NARRABEEN</h3>
-            <p>Premium mechanical support for all types of bikes on the Northern Beaches.</p>
-            <a href="mailto:hello@yowiebicycleworkshop.com.au" class="cta-btn">Book a Service</a>
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Northern Beaches Bike Workshop</p>
+          <h1>Friendly Local Bike Mechanics Service</h1>
+          <p class="lead">Honest repairs, quality servicing, and practical advice to keep you riding smoothly. From tune-ups to custom builds, Yowie Bicycle Workshop is here to help.</p>
+          <div class="cta-row">
+            <a class="button" href="services.html">View Services</a>
+            <a class="button button-secondary" href="contact.html">Book a Service</a>
+          </div>
         </div>
+        <div class="hero-card">
+          <img src="assets/logo-fork.png" alt="Yowie Bicycle Workshop fork logo" />
+        </div>
+      </div>
     </section>
 
-    <footer>
-        &copy; 2026 Yowie Bicycle Workshop - Northern Beaches, Sydney
-    </footer>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What we do</p>
+          <h2>Workshop support for everyday riders and enthusiasts</h2>
+        </div>
+        <div class="cards three-up">
+          <article class="card">
+            <h3>Bike servicing</h3>
+            <p>Routine tune-ups, brake and drivetrain adjustments, wheel checks, and safety inspections.</p>
+          </article>
+          <article class="card">
+            <h3>Repairs</h3>
+            <p>Flat tyres, worn chains, noisy drivetrains, brake issues, and the fixes that keep your bike dependable.</p>
+          </article>
+          <article class="card">
+            <h3>Builds & upgrades</h3>
+            <p>Parts installs, setup advice, and thoughtful upgrades to help your bike ride better and last longer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section section-alt">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow">Why Yowie</p>
+          <h2>Local, practical, and easy to deal with</h2>
+          <p>Yowie Bicycle Workshop is built around straightforward service: clear communication, solid workmanship, and a love of bikes. No nonsense. Just good mechanical support from a local workshop that cares.</p>
+          <a class="text-link" href="about.html">More about the workshop →</a>
+        </div>
+        <div class="feature-panel">
+          <ul class="ticks">
+            <li>Friendly local service</li>
+            <li>Honest recommendations</li>
+            <li>Repairs and servicing</li>
+            <li>Mountain, road, commuter, and kids bikes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container callout">
+        <div>
+          <p class="eyebrow">Need help with your bike?</p>
+          <h2>Get in touch and we’ll get you rolling.</h2>
+        </div>
+        <a class="button" href="contact.html">Contact Yowie</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo-front.png" alt="Yowie Bicycle Workshop" />
+      </div>
+      <div>
+        <p><strong>Yowie Bicycle Workshop</strong></p>
+        <p>Friendly Local Bike Mechanics Service</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
