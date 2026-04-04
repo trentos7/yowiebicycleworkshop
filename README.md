@@ -1,6 +1,6 @@
 # Yowie Bicycle Workshop static site
 
-This is a simple static website ready for GitHub + Netlify.
+This is a simple static website ready for GitHub + Netlify (currently Github Pages, nmot Netlify).
 
 ## Files
 - `index.html`
