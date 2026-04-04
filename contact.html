@@ -33,9 +33,18 @@
       <div class="container split-grid">
         <div class="card contact-card">
           <h2>Contact details</h2>
-          <p><strong>Trent:</strong> 0450 956 707</p>
-          <p><strong>Jason:</strong> 0429 374 179</p>
-          <a href="mailto:yowiebicycleworkshop@gmail.com?subject=Bike%20Service%20Enquiry&body=Hi%20Yowie,%0D%0A%0D%0AI%E2%80%99d%20like%20help%20with%20my%20bike.%0D%0A%0D%0ABike%20type:%0D%0AIssue:%0D%0A"><strong>Email:</strong> yowiebicycleworkshop@gmail.com</a> </p>
+          <p><strong>Trent:</strong> <a class="contact-phone-link" href="tel:+61450956707">0450 956 707</a></p>
+          <p><strong>Jason:</strong> <a class="contact-phone-link" href="tel:+61429374179">0429 374 179</a></p>
+          <div class="contact-sms-actions">
+            <a
+              class="button button-sms"
+              href="sms:+61450956707?body=Hi%20Yowie%2C%20I%E2%80%99d%20like%20help%20with%20my%20bike."
+              aria-label="Text Yowie Bicycle Workshop"
+            >Text us</a>
+          </div>
+          <p>
+            <a href="mailto:yowiebicycleworkshop@gmail.com?subject=Bike%20Service%20Enquiry&body=Hi%20Yowie,%0D%0A%0D%0AI%E2%80%99d%20like%20help%20with%20my%20bike.%0D%0A%0D%0ABike%20type:%0D%0AIssue:%0D%0A"><strong>Email:</strong> yowiebicycleworkshop@gmail.com</a>
+          </p>
           <p><strong>Location:</strong> North Narrabeen, Sydney</p>
           <p><strong>Hours:</strong> By Appointment</p>
         </div>
@@ -75,5 +84,14 @@
       </div>
     </div>
   </footer>
+
+  <div class="mobile-contact-bar" role="region" aria-label="Quick contact">
+    <a
+      class="mobile-contact-bar__btn mobile-contact-bar__btn--sms"
+      href="sms:+61450956707?body=Hi%20Yowie%2C%20I%E2%80%99d%20like%20help%20with%20my%20bike."
+      aria-label="Text Yowie Bicycle Workshop"
+    >Text us</a>
+    <a class="mobile-contact-bar__btn mobile-contact-bar__btn--call" href="tel:+61450956707" aria-label="Call Yowie Bicycle Workshop">Call</a>
+  </div>
 </body>
 </html>

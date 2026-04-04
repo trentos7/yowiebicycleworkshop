@@ -8,6 +8,8 @@
   --accent-dark: #b88500;
   --border: rgba(255,255,255,0.1);
   --max: 1120px;
+  --sms-green: #1fa463;
+  --sms-green-hover: #24b56f;
 }
 
 * { box-sizing: border-box; }
@@ -130,13 +132,125 @@ h3 { font-size: 1.25rem; }
   background: var(--accent);
   color: #111;
   font-weight: 700;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, filter 0.15s ease;
+}
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 .button-secondary {
   background: transparent;
   color: var(--text);
   border: 1px solid var(--border);
 }
+.button-secondary:focus-visible {
+  outline-color: var(--text);
+}
+.button-sms {
+  background: var(--sms-green);
+  color: #fff;
+}
+.button-sms:hover { background: var(--sms-green-hover); }
+.button-sms:focus-visible {
+  outline-color: #fff;
+}
+.button-call-hero {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.button-call-hero:hover {
+  border-color: rgba(255,255,255,0.22);
+  background: #252525;
+}
 .text-link { color: var(--accent); font-weight: 700; }
+
+.hero-contact-hint {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  max-width: 52ch;
+  line-height: 1.5;
+}
+.hero-quick-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  align-items: center;
+}
+
+.contact-phone-link {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.contact-phone-link:hover { color: var(--text); }
+.contact-phone-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.contact-sms-actions {
+  margin: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Mobile-only quick contact (under 768px) */
+.mobile-contact-bar {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  padding: 0.55rem 1rem calc(0.55rem + env(safe-area-inset-bottom, 0px));
+  gap: 0.5rem;
+  align-items: stretch;
+  justify-content: center;
+  background: rgba(13, 13, 13, 0.96);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+.mobile-contact-bar__btn {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 280px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, border-color 0.15s ease, filter 0.15s ease;
+}
+.mobile-contact-bar__btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.mobile-contact-bar__btn--sms {
+  background: var(--sms-green);
+  color: #fff;
+}
+.mobile-contact-bar__btn--sms:hover { background: var(--sms-green-hover); }
+.mobile-contact-bar__btn--sms:focus-visible { outline-color: #fff; }
+.mobile-contact-bar__btn--call {
+  background: var(--card);
+  color: var(--text);
+  border-color: var(--border);
+}
+.mobile-contact-bar__btn--call:hover {
+  background: #252525;
+  border-color: rgba(255, 255, 255, 0.18);
+}
 
 .cards {
   display: grid;
@@ -260,4 +374,18 @@ h3 { font-size: 1.25rem; }
   .nav-wrap, .callout { flex-direction: column; align-items: flex-start; }
   .brand img { height: 48px; }
   .reviews-cta-row { justify-content: center; }
+}
+
+@media (max-width: 768px) {
+  body {
+    /* Space for fixed mobile contact bar */
+    padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+  }
+  .mobile-contact-bar {
+    display: flex;
+  }
+  .site-footer {
+    /* Extra breathing room above sticky bar */
+    padding-bottom: calc(2rem + 0.5rem);
+  }
 }
