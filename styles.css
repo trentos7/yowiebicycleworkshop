@@ -42,14 +42,38 @@ a { color: inherit; text-decoration: none; }
   padding: 0.9rem 0;
 }
 .brand img { height: 56px; width: auto; }
-.site-nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .site-nav a {
   padding: 0.55rem 0.8rem;
   border-radius: 999px;
   color: var(--muted);
 }
 .site-nav a.active,
-.site-nav a:hover { background: var(--accent); color: #111; }
+.site-nav a:hover:not(.nav-text-us) { background: var(--accent); color: #111; }
+/* Subtle SMS CTA — lighter than hero green buttons */
+.nav-text-us {
+  padding: 0.42rem 0.85rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #dff5ea;
+  border: 1px solid rgba(31, 164, 99, 0.45);
+  background: rgba(31, 164, 99, 0.14);
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.nav-text-us:hover {
+  background: rgba(31, 164, 99, 0.26);
+  border-color: rgba(31, 164, 99, 0.65);
+  color: #fff;
+}
+.nav-text-us:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
 
 .hero, .page-hero {
   background: linear-gradient(180deg, #171717 0%, #111111 100%);
