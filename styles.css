@@ -270,6 +270,14 @@ h3 { font-size: 1.25rem; }
   border: 1px solid var(--border);
   border-radius: 28px;
 }
+.callout-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
 .ticks {
   list-style: none;
   padding: 0;
@@ -372,8 +380,22 @@ h3 { font-size: 1.25rem; }
   .hero-grid, .split-grid, .three-up, .about-photo-split { grid-template-columns: 1fr; }
   .about-photo-split__figure { order: -1; }
   .nav-wrap, .callout { flex-direction: column; align-items: flex-start; }
+  .callout-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
   .brand img { height: 48px; }
   .reviews-cta-row { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .callout-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .callout-actions .button {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
