@@ -20,6 +20,6 @@
     })
     .catch(function () {
       mount.outerHTML =
-        '<section class="section"><div class="container callout"><div><p class="eyebrow">Need help with your bike?</p><h2>Get in touch and we’ll get you rolling.</h2></div><div class="callout-actions"><a class="button" href="contact.html">Contact Yowie</a></div></div></section>';
+        '<section class="section"><div class="container callout"><div><p class="eyebrow">Need help with your bike?</p><h2>Get in touch and we’ll get you rolling.</h2></div><div class="callout-actions"><a class="button button-sms" href="sms:+61485022101?body=Hi%20Yowie%2C%20I%E2%80%99d%20like%20help%20with%20my%20bike." aria-label="Text Yowie Bicycle Workshop">Text us</a><a class="button button-secondary" href="tel:+61485022101" aria-label="Call Yowie Bicycle Workshop">Call</a></div></div></section>';
     });
 })();
