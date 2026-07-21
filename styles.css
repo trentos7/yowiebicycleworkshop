@@ -490,3 +490,258 @@ h3 { font-size: 1.25rem; }
     padding-bottom: calc(2rem + 0.5rem);
   }
 }
+
+/* Services & Pricing */
+.section-subheading {
+  margin: -0.5rem 0 0;
+  font-size: 1.08rem;
+  color: var(--muted);
+  max-width: 62ch;
+  line-height: 1.6;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.5rem 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+.pricing-card--featured {
+  border-color: rgba(241, 181, 28, 0.45);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25), 0 0 0 1px rgba(241, 181, 28, 0.12);
+}
+.pricing-badge {
+  position: absolute;
+  top: -0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #111;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.pricing-card__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+.pricing-card--featured .pricing-card__title {
+  margin-top: 0.5rem;
+}
+.pricing-price {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.75rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.1;
+}
+.pricing-price-note {
+  margin: 0 0 0.85rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.pricing-tagline {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.pricing-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  flex: 1;
+}
+.pricing-highlights li {
+  position: relative;
+  padding: 0.45rem 0 0.45rem 1.35rem;
+  font-size: 0.93rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+.pricing-highlights li:last-child { border-bottom: 0; }
+.pricing-highlights li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+.pricing-card .button {
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+}
+.pricing-card .button-secondary {
+  width: 100%;
+  text-align: center;
+}
+.pricing-details-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.pricing-details-link:hover { color: var(--text); }
+
+.concierge-banner {
+  margin-top: 1.5rem;
+  padding: 1.75rem 2rem;
+  background: linear-gradient(135deg, #1a2210 0%, #161616 55%, #121820 100%);
+  border: 1px solid rgba(31, 164, 99, 0.28);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.concierge-banner__title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+}
+.concierge-banner__body {
+  margin: 0;
+  color: var(--muted);
+  max-width: 58ch;
+  line-height: 1.55;
+}
+.concierge-banner__link {
+  color: var(--accent);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.concierge-banner__link:hover { color: var(--text); }
+
+.policy-callout {
+  padding: 2rem;
+  background: linear-gradient(135deg, #221b05 0%, #161616 100%);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+}
+.policy-callout h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+}
+.policy-callout ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.policy-callout li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  line-height: 1.55;
+}
+.policy-callout li:last-child { border-bottom: 0; }
+.policy-callout strong { color: var(--text); }
+
+.service-tier-detail {
+  padding: 2rem;
+}
+.service-tier-detail__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.service-tier-detail__price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.service-tier-detail__intro {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+}
+.service-task-list {
+  columns: 2;
+  column-gap: 2rem;
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+  color: var(--text);
+}
+.service-task-list li {
+  break-inside: avoid;
+  padding: 0.35rem 0;
+  font-size: 0.95rem;
+}
+.service-tier-detail .button,
+.service-tier-detail .button-secondary {
+  margin-top: 1.5rem;
+}
+
+.mobile-concierge-section {
+  scroll-margin-top: 5rem;
+}
+.zone-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+.zone-card {
+  padding: 1.75rem;
+  height: 100%;
+}
+.zone-card__price {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+.zone-card__areas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+.zone-card__areas li {
+  padding: 0.35rem 0;
+}
+.zone-card__areas li strong {
+  display: block;
+  color: var(--text);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+.concierge-perk {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 18px;
+  background: rgba(31, 164, 99, 0.1);
+  border: 1px solid rgba(31, 164, 99, 0.28);
+  color: var(--muted);
+  line-height: 1.55;
+}
+.concierge-perk strong { color: var(--text); }
+
+@media (max-width: 860px) {
+  .pricing-grid,
+  .zone-grid { grid-template-columns: 1fr; }
+  .service-task-list { columns: 1; }
+  .concierge-banner { flex-direction: column; align-items: flex-start; }
+}

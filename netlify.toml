@@ -1,2 +1,17 @@
 [build]
   publish = "."
+
+[[redirects]]
+  from = "/services-and-pricing"
+  to = "/services-and-pricing.html"
+  status = 200
+
+[[redirects]]
+  from = "/services"
+  to = "/services-and-pricing"
+  status = 301
+
+[[redirects]]
+  from = "/services.html"
+  to = "/services-and-pricing"
+  status = 301
