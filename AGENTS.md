@@ -19,8 +19,8 @@ This is a lightweight, plain static HTML/CSS/JS website for Yowie Bicycle Worksh
 - **Localisation / Language:** Target audience is Australian. Always use Australian English spelling and localisation where applicable (e.g., "labour" instead of "labor", "tyre" instead of "tire").
 - **Pricing Rules:**
   - Base Tune-Up & Safety Check: `$110`
-  - Standard Workshop Service: `From $150 + parts` (`+$30` for e-bikes and dual-suspension MTBs)
-  - Ultimate Service & Custom Rebuild: `From $400 + parts`
+  - Standard Workshop Service: `$150 + parts` (`+$30` for e-bikes and dual-suspension MTBs)
+  - Ultimate Service & Custom Rebuild: `$400 + parts`
 - **Parts Policy Wording:** Standard wear items (cables, pads, chains) are replaced as needed. Major/high-value components are always quoted and pre-approved before fitting.
 - **Mobile Concierge Rates:** Local zone `$20` each way (`$40` round trip); Extended Northern Beaches `$40` each way (`$80` round trip).
 
