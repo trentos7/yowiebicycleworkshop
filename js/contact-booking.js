@@ -1,9 +1,11 @@
 (function () {
   var SERVICE_MESSAGES = {
-    "basic-tune-up": "Hi Yowie, I'd like to book a Basic Tune-Up.",
-    "standard-service": "Hi Yowie, I'd like to book a Standard Workshop Service.",
-    "ultimate-rebuild": "Hi Yowie, I'd like to book an Ultimate Service & Custom Rebuild.",
-    "mobile-concierge": "Hi Yowie, I'd like to book Mobile Pick-Up & Delivery."
+    "basic-tune-up": "Hi Yowie, I'd like to book my bike in for a Basic Tune-Up (Bike: [insert bike type]). I am hoping to get it done within the next days/weeks/ASAP. thanks",
+    "standard-service": "Hi Yowie, I'd like to book my bike in for a Standard Workshop Service (Bike: [insert bike type]). I am hoping to get it done within the next days/weeks/ASAP. thanks",
+    "ultimate-rebuild": "Hi Yowie, I'd like to book my bike in for an Ultimate Service & Custom Rebuild (Bike: [insert bike type]). I am hoping to get it done within the next days/weeks/ASAP. thanks",
+    "mobile-concierge": "Hi Yowie, I'd like to book my bike in for Mobile Pick-Up & Delivery (Bike: [insert bike type]). I am hoping to get it done within the next days/weeks/ASAP. thanks",
+    "fork-service": "Hi Yowie, I'd like to book my bike in for a Fork Lower Leg Service (Bike: [insert bike type]). I am hoping to get it done within the next days/weeks/ASAP. thanks",
+    "shock-service": "Hi Yowie, I'd like to book my bike in for a Rear Shock Air Can Service (Bike: [insert bike type]). I am hoping to get it done within the next days/weeks/ASAP. thanks"
   };
 
   var params = new URLSearchParams(window.location.search);

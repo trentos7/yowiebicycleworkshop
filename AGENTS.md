@@ -16,12 +16,17 @@ This is a lightweight, plain static HTML/CSS/JS website for Yowie Bicycle Worksh
 ## Domain & Copy Guidelines
 - **Business Name:** Yowie Bicycle Workshop
 - **Primary Location:** Northern Beaches / North Narrabeen, NSW, Australia
+- **Localisation / Language:** Target audience is Australian. Always use Australian English spelling and localisation where applicable (e.g., "labour" instead of "labor", "tyre" instead of "tire").
 - **Pricing Rules:**
   - Base Tune-Up & Safety Check: `$110`
   - Standard Workshop Service: `From $150 + parts` (`+$30` for e-bikes and dual-suspension MTBs)
   - Ultimate Service & Custom Rebuild: `From $400 + parts`
 - **Parts Policy Wording:** Standard wear items (cables, pads, chains) are replaced as needed. Major/high-value components are always quoted and pre-approved before fitting.
 - **Mobile Concierge Rates:** Local zone `$20` each way (`$40` round trip); Extended Northern Beaches `$40` each way (`$80` round trip).
+
+- **Suspension Servicing:**
+  - **Fork Lower Leg Service (Fox & RockShox):** `$160` (includes wiper seal kit, 50-hour intervals)
+  - **Rear Shock Air Can Service (Fox & RockShox):** `$140` (includes air sleeve seal kit, 50-hour intervals)
 
 ## File Boundaries
 - Do not add Node.js server scripts or backend API endpoints to this repo.

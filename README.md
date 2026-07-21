@@ -19,7 +19,7 @@ This site is hosted directly via **GitHub Pages**.
 3. **Note:** Keep the `.nojekyll` file in the root directory to avoid GitHub Pages ignoring asset folders or CSS compilation paths.
 
 ## Key Policies Reflected on Site
-- **Pricing Basis:** Labor rates displayed are base prices (`+ parts`).
+- **Pricing Basis:** Labour rates displayed are base prices (`+ parts`).
 - **Parts Policy:** Standard wear items (cables, pads, chains) replaced during servicing as needed; major components (cranks, chainrings, suspension) are quoted and pre-approved.
 - **E-Bike / Dual Suspension:** +$30 surcharge applied on Standard Services.
 - **Mobile Concierge:** Local zone ($20 each way / $40 round trip), Extended zone ($40 each way / $80 round trip).
