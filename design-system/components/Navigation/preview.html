@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Navigation — Yowie Design System</title>
+<link rel="stylesheet" href="../../tokens.css" />
+<style>
+  body { margin: 0; background: var(--bg); font-family: var(--font-sans); }
+  .header {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 14px 24px;
+    background: rgba(17,17,17,0.92);
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { color: var(--text); font-weight: 700; font-size: 18px; text-decoration: none; }
+  .nav { display: flex; gap: 8px; align-items: center; }
+  .nav a { padding: 0.55rem 0.8rem; border-radius: var(--radius-pill); color: var(--muted); text-decoration: none; font-size: 15px; }
+  .nav a.active { background: var(--accent); color: var(--on-accent); }
+  .nav a.text-us {
+    padding: 0.42rem 0.85rem;
+    font-size: 13.8px;
+    font-weight: 700;
+    color: #dff5ea;
+    border: 1px solid var(--green-line-strong);
+    background: var(--green-wash);
+  }
+  .nav a.text-us:hover {
+    background: var(--green-wash-strong);
+    border-color: var(--green-line-hover);
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <a class="brand" href="#">YOWIE BICYCLE WORKSHOP</a>
+    <nav class="nav">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services &amp; Pricing</a>
+      <a href="#">Contact</a>
+      <a href="#" class="text-us">Text us</a>
+    </nav>
+  </div>
+</body>
+</html>

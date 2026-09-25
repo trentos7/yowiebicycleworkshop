@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>PricingCard — Yowie Design System</title>
+<link rel="stylesheet" href="../../tokens.css" />
+<style>
+  body { margin: 0; padding: 32px; background: var(--bg); font-family: var(--font-sans); }
+  .grid { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+  .pricing-card {
+    position: relative;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 24px 24px;
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+  }
+  .pricing-card--featured {
+    border-color: var(--accent-line-strong);
+    box-shadow: var(--shadow-card), 0 0 0 1px var(--accent-glow);
+  }
+  .badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    background: var(--accent);
+    color: var(--on-accent);
+    white-space: nowrap;
+  }
+  .title { margin: 0 0 12px; color: var(--text); }
+  .featured .title { margin-top: 8px; }
+  .price { margin: 0 0 6px; color: var(--accent); }
+  .note { margin: 0 0 14px; color: var(--muted); font-weight: 600; }
+  .tagline { margin: 0 0 16px; color: var(--muted); }
+  ul.highlights { list-style: none; padding: 0; margin: 0 0 20px; flex: 1; }
+  ul.highlights li { position: relative; padding: 7px 0 7px 22px; color: var(--text); border-bottom: 1px solid var(--border); }
+  ul.highlights li:last-child { border-bottom: 0; }
+  ul.highlights li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .button {
+    margin-top: auto;
+    text-align: center;
+    display: block;
+    padding: 0.95rem 1.2rem;
+    border-radius: var(--radius-pill);
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 700;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <article class="pricing-card">
+      <h3 class="title ds-h3">Basic Tune-Up &amp; Safety Check</h3>
+      <p class="price ds-price-lg">$110</p>
+      <p class="note ds-caption">Labour only</p>
+      <p class="tagline ds-body">Perfect for kids' bikes, commuters, or clean bikes that just need a quick dial-in.</p>
+      <ul class="highlights ds-small">
+        <li>Precise gear &amp; brake adjustment</li>
+        <li>Full safety inspection</li>
+        <li>Chain lube &amp; tyre pressure check</li>
+      </ul>
+      <a class="button" href="#">Book Basic Tune-Up</a>
+    </article>
+    <article class="pricing-card pricing-card--featured featured">
+      <span class="badge ds-badge">Most Popular</span>
+      <h3 class="title ds-h3">Standard Workshop Service</h3>
+      <p class="price ds-price-lg">$150 + parts</p>
+      <p class="note ds-caption">+$30 for e-bikes &amp; dual-suspension MTBs</p>
+      <p class="tagline ds-body">Our most popular comprehensive service — drivetrain deep wash and safety check.</p>
+      <ul class="highlights ds-small">
+        <li>Full drivetrain wash</li>
+        <li>Precise gear &amp; brake indexing</li>
+        <li>Bolt torque check &amp; basic wheel truing</li>
+      </ul>
+      <a class="button" href="#">Book Standard Service</a>
+    </article>
+  </div>
+</body>
+</html>

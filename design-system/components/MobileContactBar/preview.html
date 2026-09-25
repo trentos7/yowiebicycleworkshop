@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>MobileContactBar — Yowie Design System</title>
+<link rel="stylesheet" href="../../tokens.css" />
+<style>
+  body { margin: 0; background: var(--bg); font-family: var(--font-sans); padding: 40px 16px 0; }
+  .bar {
+    display: flex; gap: 8px;
+    padding: 9px 16px;
+    background: rgba(13,13,13,0.96);
+    border-top: 1px solid var(--border);
+    box-shadow: var(--shadow-sticky-bar);
+  }
+  .btn { flex: 1; text-align: center; padding: 14px 16px; border-radius: var(--radius-pill); font-weight: 700; text-decoration: none; border: 1px solid transparent; }
+  .btn--sms { background: var(--sms-green); color: var(--on-sms); }
+  .btn--call { background: var(--surface-card); color: var(--text); border-color: var(--border); }
+</style>
+</head>
+<body>
+  <div class="bar">
+    <a class="btn btn--sms ds-small" href="#">Text us</a>
+    <a class="btn btn--call ds-small" href="#">Call</a>
+  </div>
+</body>
+</html>

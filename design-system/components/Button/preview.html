@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Button — Yowie Design System</title>
+<link rel="stylesheet" href="../../tokens.css" />
+<style>
+  body { margin: 0; padding: 32px; background: var(--bg); font-family: var(--font-sans); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+  .button {
+    display: inline-block;
+    padding: 0.95rem 1.2rem;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .button-primary { background: var(--accent); color: var(--on-accent); }
+  .button-secondary { background: transparent; color: var(--text); border-color: var(--border); }
+  .button-sms { background: var(--sms-green); color: var(--on-sms); }
+  .button-sms:hover { background: var(--sms-green-hover); }
+  .button-call { background: var(--surface-card); color: var(--text); border-color: var(--border); }
+  .button-call:hover { border-color: var(--border-hover); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <a class="button button-primary" href="#">Services &amp; Pricing</a>
+    <a class="button button-secondary" href="#">Book a Service</a>
+    <a class="button button-sms" href="#">Text us</a>
+    <a class="button button-call" href="#">Call now</a>
+  </div>
+</body>
+</html>

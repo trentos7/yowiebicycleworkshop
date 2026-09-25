@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Footer — Yowie Design System</title>
+<link rel="stylesheet" href="../../tokens.css" />
+<style>
+  body { margin: 0; background: var(--bg-footer); font-family: var(--font-sans); padding: 32px; border-top: 1px solid var(--border); }
+  .row { display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap; }
+  .name { margin: 0; color: var(--text); font-weight: 700; }
+  .tag { margin: 4px 0 0; color: var(--muted); }
+  .heading { margin: 14px 0 8px; color: var(--muted); }
+  .icons { display: flex; gap: 8px; list-style: none; padding: 0; margin: 0; }
+  .icon {
+    width: 2.35rem; height: 2.35rem; border-radius: var(--radius-full);
+    display: flex; align-items: center; justify-content: center;
+    background: var(--footer-icon-bg); border: 1px solid var(--border); color: var(--muted);
+  }
+  .icon svg { width: 17px; height: 17px; fill: currentColor; }
+  .icon:hover { background: var(--footer-icon-bg-hover); border-color: var(--footer-icon-border-hover); color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div>
+      <p class="name ds-body">Yowie Bicycle Workshop</p>
+      <p class="tag ds-body">Friendly Local Bicycle Mechanics Servicing and Repairs</p>
+      <p class="heading ds-footer-heading">Follow</p>
+      <ul class="icons">
+        <li class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg></li>
+        <li class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/></svg></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
