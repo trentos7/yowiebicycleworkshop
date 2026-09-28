@@ -1,6 +1,6 @@
 # Logos
 
-Four real lockups, already in `../../../assets/` (this file just documents which one to use where — the images aren't duplicated here).
+Four real lockups, already in `../../../site/assets/` (this file just documents which one to use where — the images aren't duplicated here).
 
 - **`assets/logo-front.png`** — Horizontal lockup: black rounded pill, gold "YOWIE" script wordmark over a black "BICYCLE WORKSHOP" band, "NORTHERN BEACHES" subtext. **This is the one actually used in the live site** — header brand mark and footer logo. Default choice for any horizontal placement (headers, email headers, business cards).
 - **`assets/logo-fork.png`** — The Yowie mascot (black silhouette, holding a chainring and a fork) standing on the stacked "YOWIE / BICYCLE WORKSHOP" wordmark, transparent background. Used in the homepage hero card, set on a `--text` (#f6f1e8) coloured padded block per the source CSS rule targeting this specific file. Best for square/portrait placements and as a standalone mark where the mascot should read on its own.

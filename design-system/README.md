@@ -1,11 +1,11 @@
 # Yowie Bicycle Workshop — Design System
 
-Reverse-engineered from the live static site (`../styles.css`, `../index.html`, `../about.html`, `../contact.html`, `../services-and-pricing.html`). This documents that site's actual design language for reuse — it is not a redesign. It's also published as an interactive Claude Artifact with live component previews; ask Trent for that link if you don't have it.
+Reverse-engineered from the live static site (`../site/styles.css`, `../site/index.html`, `../site/about.html`, `../site/contact.html`, `../site/services-and-pricing.html`). This documents that site's actual design language for reuse — it is not a redesign. It's also published as an interactive Claude Artifact with live component previews; ask Trent for that link if you don't have it.
 
 - `tokens.json` — the token source of truth (colours, type, spacing, radius, shadow, breakpoints, z-index), each with a usage note.
 - `tokens.css` — the same tokens compiled to CSS custom properties + type-style classes, ready to `<link>` into a new page.
 - `components/` — one folder per UI pattern, each with a `README.md` (usage rules) and a `preview.html` you can open directly in a browser.
-- `assets/logos/README.md` — which of the four logo lockups in `../assets/` to use where.
+- `assets/logos/README.md` — which of the four logo lockups in `../site/assets/` to use where.
 
 ## Voice
 
@@ -59,4 +59,4 @@ The only icons on the site are two hand-inlined social SVGs in the footer (Insta
 
 ## Logo & brand marks
 
-Four real lockups exist in `../assets/`, catalogued in `assets/logos/README.md`. **Primary** (horizontal, black pill — `logo-front.png`) is the one actually used in the site header/footer; the other three are alternate lockups for other formats (hero/badge/wide) — see that README before picking one for a new surface.
+Four real lockups exist in `../site/assets/`, catalogued in `assets/logos/README.md`. **Primary** (horizontal, black pill — `logo-front.png`) is the one actually used in the site header/footer; the other three are alternate lockups for other formats (hero/badge/wide) — see that README before picking one for a new surface.

@@ -5,13 +5,14 @@ This is a lightweight, plain static HTML/CSS/JS website for Yowie Bicycle Worksh
 
 ## Tech Stack & Environment
 - **Architecture:** Static HTML5 / CSS / Vanilla JS. No build framework or server-side rendering.
-- **Hosting:** GitHub Pages (Root deployment).
+- **Hosting:** GitHub Pages, deployed by `.github/workflows/deploy.yml`. Only the `site/` folder is published; everything else in the repo stays off the website.
 - **CSS:** Plain CSS / Tailwind CSS utility classes.
 
 ## Development Rules & Constraints
-1. **GitHub Pages Compatibility:** Always use valid relative file paths (e.g., `./styles.css` or `css/styles.css`). Never use hardcoded local paths.
-2. **Do Not Delete `.nojekyll`:** Ensures GitHub Pages does not run Jekyll build routines.
-3. **Responsive First:** All grid layouts (e.g., pricing cards, service tiers) must use mobile-first responsive classes (1 column on mobile, 3 columns on desktop).
+1. **Public Files Live in `site/`:** Every page, asset, script, `CNAME`, `robots.txt` and `sitemap.xml` belongs in `site/`. Notes, docs, scripts and source photos stay outside it.
+2. **GitHub Pages Compatibility:** Always use valid relative file paths within `site/` (e.g., `./styles.css` or `css/styles.css`). Never use hardcoded local paths.
+3. **Sitemap:** Add every new public page to `site/sitemap.xml`.
+4. **Responsive First:** All grid layouts (e.g., pricing cards, service tiers) must use mobile-first responsive classes (1 column on mobile, 3 columns on desktop).
 
 ## Domain & Copy Guidelines
 - **Business Name:** Yowie Bicycle Workshop
